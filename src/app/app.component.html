@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+
+
+
+<button (click)="displayHelloWorld()" 
+[ngClass]="{'red-button': !showHelloWorld,'green-button':showHelloWorld}"
+> CLICK ME </button>
+
+<h3 *ngIf="showHelloWorld">{{helloWorldMessage}}</h3>
+
+
+<app-persons-list></app-persons-list>
